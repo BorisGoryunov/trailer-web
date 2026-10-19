@@ -1,0 +1,9 @@
+{
+    auto_https off
+}
+
+:80 {
+    root * /srv/site
+    encode gzip zstd
+    file_server
+}
