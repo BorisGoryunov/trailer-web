@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 # scp install-caddy.sh root@rathome.fvds.ru:/tmp/
 # sudo bash /tmp/install-caddy.sh
+# scp -r site/ root@80.74.27.126:/var/www/rathome/
+
 set -euo pipefail
 
-DOMAIN="${DOMAIN:-rathome.fvds.ru}"
+DOMAIN="${DOMAIN:-bg-k3s.ru}"
 WEBROOT="${WEBROOT:-/var/www/rathome}"
 LANDING="${LANDING:-pricep}"
 CADDYFILE="/etc/caddy/Caddyfile"

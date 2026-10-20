@@ -3,7 +3,7 @@ docker build -t landing-dist .
 
 # 2. достать результат локально (для проверки в Caddy)
 docker create --name landing-tmp landing-dist
-docker cp landing-tmp:/dist/pricep ./site/pricep
+docker cp landing-tmp:/dist/pricep ./site
 docker rm landing-tmp
 
 # 3. проверить
